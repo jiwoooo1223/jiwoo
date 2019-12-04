@@ -1,0 +1,78 @@
+body {
+    color: #d49a93;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+table {
+    width: 80%;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 30px 0px;
+}
+
+.article {
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid black;
+
+}
+
+td {
+    font-size: 14px;
+}
+
+img {
+    width: 700px;
+}
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    border: 4px solid #88afd1;
+    text-align: center;
+    font-family: '양진체';
+    margin: 20px 0px;
+}
+
+input {
+    display: none;
+}
+
+.con {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    border: 4px solid #9dafbf;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: '양진체';
+}
+
+label:hover {
+    background-color: coral;
+}
+
+input:checked + label {
+    color: #d35252;
+}
+
+#tab1:checked ~ #tab1_content,
+#tab2:checked ~ #tab2_content,
+#tab3:checked ~ #tab3_content {
+    display: block;
+    font-family: '양진체';
+    margin: auto;
+}
